@@ -18,7 +18,6 @@ int main(int argc, char* argv[])
                output << outcome[0] << std::endl;
                }
            }
-
     output.close();
     input.close();
     return 0;
