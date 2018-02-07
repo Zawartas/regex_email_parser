@@ -13,10 +13,8 @@ int main(int argc, char* argv[])
     std::string line;
     std::smatch outcome;
     while (std::getline(input, line)){
-            if(regex_search(line, outcome, pattern)){
-                    std::cout << "sukces" << std::endl;
+            if(regex_search(line, outcome, pattern))
                output << outcome[0] << std::endl;
-               }
            }
     output.close();
     input.close();
